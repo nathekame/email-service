@@ -53,6 +53,7 @@ Send a transactional email via Brevo.
 
 **Endpoint:** `POST /api/send-email`
 
+
 **Request Body:**
 ```json
 {
@@ -73,9 +74,6 @@ Send a transactional email via Brevo.
 ```json
 {
   "message": "Email sent successfully",
-  "data": {
-    "messageId": "<...>"
-  }
 }
 ```
 
@@ -85,6 +83,8 @@ Send a transactional email via Brevo.
   "message": "Missing required fields: subject, htmlContent, sender, to"
 }
 ```
+
+
 
 ### Example cURL Request
 ```bash
@@ -104,6 +104,12 @@ curl -X POST http://localhost:5000/api/send-email \
   }'
 ```
 
+### API Docs
+View documentation
+
+**Endpoint:** GET /docs
+
+
 ## Project Structure
 
 ```
@@ -119,6 +125,8 @@ email-service/
 ├── package.json
 └── tsconfig.json
 ```
+
+
 
 ## Environment Variables
 
@@ -178,6 +186,7 @@ curl https://api.ipify.org
 - **Express.js** - Web framework
 - **TypeScript** - Type safety
 - **Brevo** - Email service provider
+- **OpenAPI and SwaggerUI** - Documentation
 
 ## Error Handling
 
